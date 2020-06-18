@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms Practice</title>
+</head>
+<body>
+    <form action="../first/index.html">
+        <h1>Form para TYPE TEXT</h1>
+        <label for="primerNombre">Primer Nombre:  </label>
+        <input type="text" id="primerNombre"><br><br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido"><br><br>
+        <input type="submit" value="Agregar">
+    </form><hr>
+    <!--OJO EN ESTE CASO, El valor que se le pone en el input, el atributo value, es lo que se envía a la base de datos-->
+    <form action="../first/index.html" method="get">
+        <h1>Forma para TYPE RADIO</h1>
+        <input type="radio" name="opcion1" id="opcion1" value="ok">
+        <label for="opcion1">Opcion 1</label><br><br>
+        <input type="submit" value="enviar">
+    </form><hr>
+    <form action="../first/index.html" method="get">
+        <h1>Form para TYPE CHECKBOX</h1>
+        <input type="checkbox" name="opcionA" id="opcionA" value="ok">
+        <label for="opcionA">OpcionA</label>
+        <input type="submit" value="enviar">
+    </form><hr>
+    <form action="../first/index.html" method="get">
+        <h1>LISTA PARA ELEGIR</h1>
+        <p>Selecciona alguna (párrafo me dal el salto)</p>
+        <label for="marcas">Seleccion</label>
+        <select name="marcas" id="marcas"> 
+            <option value="opc1">marca 1</option>
+            <option value="opc2">marca 2</option>
+            <option value="opc3">marca 3</option>
+            <option value="opc4">marca 4</option>
+            <option value="opc5">marca 5</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form><hr>
+    <form action="../first/index.html" method="get">
+        <h1>TEXT AREA</h1>
+        <textarea name="area1" id="area1" cols="20" rows="10"></textarea><br>
+        <input type="submit" value="enviar">
+    </form><hr>
+    <form action="../first/index.html">
+        <h1>CON UN FIELDSET</h1>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"><br><br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido"><br><br>
+            <input type="submit">
+        </fieldset>
+    </form>    
+</body>
+</html>
+
+<!-- TIPOS DE INPUT
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+-->
